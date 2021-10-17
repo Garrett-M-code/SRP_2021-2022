@@ -1,0 +1,137 @@
+VIRUS SIMULATION DATA:
+Population: 244227
+Vaccinated: 0
+Infected: 37226
+
+Day: 1
+	Current population:
+		244227
+
+	Total Amount Dead:
+		0
+
+	Currently Infected:
+		37226
+
+	Today's Newly infected:
+		0
+Day: 2
+	Current population:
+		244227
+
+	Total Amount Dead:
+		0
+
+	Currently Infected:
+		37226
+
+	Today's Newly infected:
+		0
+Day: 3
+	Current population:
+		244227
+
+	Total Amount Dead:
+		0
+
+	Currently Infected:
+		37226
+
+	Today's Newly infected:
+		0
+Day: 4
+	Current population:
+		244227
+
+	Total Amount Dead:
+		0
+
+	Currently Infected:
+		37226
+
+	Today's Newly infected:
+		0
+Day: 5
+	Current population:
+		244227
+
+	Total Amount Dead:
+		0
+
+	Currently Infected:
+		37226
+
+	Today's Newly infected:
+		0
+Day: 6
+	Current population:
+		244227
+
+	Total Amount Dead:
+		0
+
+	Currently Infected:
+		37226
+
+	Today's Newly infected:
+		0
+Day: 7
+	Current population:
+		244227
+
+	Total Amount Dead:
+		0
+
+	Currently Infected:
+		37226
+
+	Today's Newly infected:
+		0
+Day: 8
+	Current population:
+		244227
+
+	Total Amount Dead:
+		0
+
+	Currently Infected:
+		37226
+
+	Today's Newly infected:
+		0
+Day: 9
+	Current population:
+		244227
+
+	Total Amount Dead:
+		0
+
+	Currently Infected:
+		37226
+
+	Today's Newly infected:
+		0
+Day: 10
+	Current population:
+		244227
+
+	Total Amount Dead:
+		0
+
+	Currently Infected:
+		37226
+
+	Today's Newly infected:
+		0
+Day: 11
+	Current population:
+		244227
+
+	Total Amount Dead:
+		0
+
+	Currently Infected:
+		37226
+
+	Today's Newly infected:
+		0

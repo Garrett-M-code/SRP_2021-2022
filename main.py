@@ -58,7 +58,7 @@ vaccineEffectiveness = vaccineEffectiveness * 0.01
 #This will be a percentage
 
 infectionRate = input("What is the infection rate?\n\t")
-infectionRate = int(infectionRate)
+infectionRate = float(infectionRate)
 #This will be a percentage
 
 #########
@@ -115,6 +115,7 @@ while True:
 
     for people in population:
         people[1] -= 1
+        #deals with quarinitne
 
     infect_assign = rate_manager.infectionRateWorker()
     population = infect_assign

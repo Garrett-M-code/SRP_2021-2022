@@ -1,0 +1,29 @@
+VIRUS SIMULATION DATA:
+Population: 244227
+Vaccinated: 0
+Infected: 1
+
+Day: 1
+	Current population:
+		244227
+
+	Total Amount Dead:
+		0
+
+	Currently Infected:
+		1
+
+	Today's Newly infected:
+		0
+Day: 2
+	Current population:
+		244227
+
+	Total Amount Dead:
+		0
+
+	Currently Infected:
+		2421
+
+	Today's Newly infected:
+		0

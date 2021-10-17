@@ -64,8 +64,9 @@ class AssignmentVal():
     def initial_Infection(self):
         initial_infected_num = self.infectedNum
         for people in self.population:
-            if initial_infected_num > 0:
+            if initial_infected_num > 0.0:
                 people[3] = "Sick"
+                people[1] = 14
 
             else:
                 people[3] = "Healthy"
