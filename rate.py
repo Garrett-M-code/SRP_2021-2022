@@ -19,7 +19,9 @@ class Rates:
         self.infect_rate = infectionRate
 
     def deathRateGenerator(self):
-        self.effect = 100 - self.effect
+        self.effect = 100.0 - self.effect
+        self.effect = float(self.effect)
+        self.effect = self.effect * 0.01
 
         for people in self.population:
             if people[2] == "Vaccinated":
@@ -27,6 +29,8 @@ class Rates:
                 people[5] = temp_rate
             elif people[2] == "Not vaccinated":
                 people[5] = self.death_rate
+
+            print(people)
 
         return self.population
 

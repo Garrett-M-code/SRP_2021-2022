@@ -92,7 +92,7 @@ class PopulationCreate(AssignmentVal):
         while person < self.populationNumber - 1:
             person = person + 1
             self.population.append([person, 0, "Not vaccinated",
-                "Healthy", "Alive", 0])
+                "Healthy", "Alive", 0.0])
                 # The first 0 is the infection cooldown, the second 0 is the
                 # death rate.
 

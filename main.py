@@ -54,7 +54,6 @@ vaccinated = []
 
 vaccineEffectiveness = input("How effective is this vaccine against death?\n\t")
 vaccineEffectiveness = int(vaccineEffectiveness)
-vaccineEffectiveness = vaccineEffectiveness * 0.01
 #This will be a percentage
 
 infectionRate = input("What is the infection rate?\n\t")
@@ -83,11 +82,11 @@ rate_manager = rate.Rates(population, popNum, infected,
 data_manager = dataWrite.FileManager(vaccinatedNum, popNum, infectedNum)
 data_manager.createFile()
 
-death_rate_return = rate_manager.deathRateGenerator()
-population = death_rate_return
-
 vax_return = vaccine_runner.vaccine()
 population = vax_return
+
+death_rate_return = rate_manager.deathRateGenerator()
+population = death_rate_return
 
 pop_return = contagion.initial_Infection()
 population = pop_return
