@@ -106,6 +106,13 @@ while True:
     data_manager.dailyUpdate(popNum, infectedNum, amountDead,
         newInfected, day)
 
+    if infectedNum <= 0:
+        print("Congrats! The pandemic has ended. There are no more sick people!")
+        break
+
+    else:
+        pass
+
     for people in population:
         people[1] -= 1
 
