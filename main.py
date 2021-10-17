@@ -35,6 +35,8 @@ vaccinatedNum = 0
 day = 0
 #This prints the days summary.
 
+correct_daily_infected_num = 0
+
 keepOn = ""
 
 ##########
@@ -91,18 +93,23 @@ population = pop_return
 
 while True:
     day += 1
+    old_infected_num = infectedNum
+
     print(f"\nDay {day}:")
 
     print(f"Current population:\n\t{popNum}")
     print(f"Total Amount Dead:\n\t{amountDead}")
     print(f"Currently Infected:\n\t{infectedNum}")
-    print(f"Today's Newly infected:\n\t{newInfected}")
+    print(f"Today's Newly infected Compared to Yesterday:\n\t{correct_daily_infected_num}")
 
     data_manager.dailyUpdate(popNum, infectedNum, amountDead,
         newInfected, day)
 
     for people in population:
         people[1] -= 1
+
+    choice_return = rate_manager.deathChoice()
+    population = choice_return
 
     infect_assign = rate_manager.infectionRateWorker()
     population = infect_assign
@@ -114,10 +121,8 @@ while True:
     popNum = infection_return[3]
     amountDead = infection_return[4]
 
-    choice_return = rate_manager.deathChoice()
-    population = choice_return
-
-    newInfected = 0
+    tomarrow_s_infected_num = infectedNum - old_infected_num
+    correct_daily_infected_num = int(tomarrow_s_infected_num)
 
     keepOn = input("Continue? (Y/n) ")
     keepOn = keepOn.title()

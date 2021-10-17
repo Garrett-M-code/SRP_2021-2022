@@ -20,6 +20,7 @@ class AssignmentVal():
             if people[3] == "Sick":
                 if people[1] <= 0:
                     people[3] = "Healthy"
+                    #del self.infected[person]
                     self.infectedNum -= 1
 
                 elif people[1] == 14:
@@ -30,14 +31,17 @@ class AssignmentVal():
                 pass
 
         for people in self.population:
+            person = 0
             if people[4] == "Dead":
-                del self.population[people[0]]
+                poped = self.population.pop(person)
                 self.deadNum += 1
                 self.populationNumber -= 1
                 self.infectedNum -= 1
 
             elif people[4] == "Alive":
                 pass
+
+            person += 1
 
         return self.population, self.infected, self.infectedNum, self.populationNumber, self.deadNum
 
