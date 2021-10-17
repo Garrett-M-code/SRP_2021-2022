@@ -5,7 +5,8 @@ import populationfunctions
 class Rates:
     """Generates and deals with most rates"""
     def __init__(self, population, populationNumber, infected,
-        infectedNum, vaccinated, vaccinatedNum, deathRate, vaccineEffectiveness):
+        infectedNum, vaccinated, vaccinatedNum, deathRate, vaccineEffectiveness,
+        infectionRate):
         """The inizilation of the rates class"""
         self.population = population
         self.populationNumber = populationNumber
@@ -13,35 +14,50 @@ class Rates:
         self.infectedNum = infectedNum
         self.vaccinated = vaccinated
         self.vaccinatedNum = vaccinatedNum
-        self.deathrate = deathrate
+        self.death_rate = deathRate
         self.effect = vaccineEffectiveness
-        # TODO: Create the deathRate
+        self.infect_rate = infectionRate
 
     def deathRateGenerator(self):
+        self.effect = 100 - self.effect
+
         for people in self.population:
             if people[2] == "Vaccinated":
-                temp_rate = self.deathRate * self.effect
+                temp_rate = self.death_rate * self.effect
                 people[5] = temp_rate
             elif people[2] == "Not vaccinated":
-                people[5] = self.deathRate
+                people[5] = self.death_rate
 
         return self.population
-        # TODO: Create the generator for the death rate.
 
     def deathChoice(self):
         for people in self.population:
-            choice = randint(1, 100)
-            life_death = populationfunctions.AssignmentVal(self.population,
-                self.populationNumber, self.infected,
-                self.infectedNum, self.vaccinated, self.vaccinatedNum)
+            if people[3] == "Sick":
+                choice = random.uniform(0.0, 100.0)
 
-            if choice > people[5]:
-                print("Congrats you survived.")
-            elif choice <= people[5]:
-                print("You died")
+                if choice > people[5]:
+                    people[4] = "Alive"
 
-        self.population = life_death.popEffect(self)
+                elif choice <= people[5]:
+                    people[4] = "Dead"
+
+            else:
+                pass
+
         return self.population
 
     def infectionRateWorker(self):
-        """Will Deal with the overall infection rate."""
+        for people in self.population:
+            if people[3] == "Sick":
+                pass
+
+            elif people[3] == "Healthy":
+                rando = random.uniform(0.0, 100.0)
+                if rando <= self.infect_rate:
+                    people[3] = "Sick"
+                    people[1] = 14
+
+                else:
+                    pass
+
+        return self.population

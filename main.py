@@ -26,6 +26,9 @@ infectedNum = int(infectedNum)
 infected = []
 #This is a list that contains infected people.
 
+death_rate = int(input("What is the death rate?\n\t"))
+# The death rate
+
 vaccinatedNum = 0
 #The amount of people vaccininated.
 
@@ -38,21 +41,20 @@ keepOn = ""
 ## Rates ##
 ##########
 
-vaccinatedRate = input("What percentage is vaccinated?\n\t")
-vaccinatedRate = int(vaccinatedRate)
-vaccinatedRate = vaccinatedRate * 0.10
+vaccinatedRate = input("What percent is vaccinated?\n\t")
+vaccinatedRate = float(vaccinatedRate)
+vaccinatedRate = vaccinatedRate * 0.01
 #This will be a percentage
 
 vaccinated = []
 
-vaccineEffectiveness = input("How effective is this vaccine?\n\t")
+vaccineEffectiveness = input("How effective is this vaccine against death?\n\t")
 vaccineEffectiveness = int(vaccineEffectiveness)
-vaccineEffectiveness = vaccineEffectiveness * 0.10
+vaccineEffectiveness = vaccineEffectiveness * 0.01
 #This will be a percentage
 
 infectionRate = input("What is the infection rate?\n\t")
 infectionRate = int(infectionRate)
-infectionRate = infectionRate * 10
 #This will be a percentage
 
 #########
@@ -60,22 +62,32 @@ infectionRate = infectionRate * 10
 #########
 
 creator = populationfunctions.PopulationCreate(population, popNum, infected,
-    infectedNum, vaccinated, vaccinatedRate)
+    infectedNum, vaccinated, vaccinatedRate, amountDead)
 
 population = creator.populate()
-print(f"Population: {population}")
+#print(f"Population: {population}")
 
 contagion = populationfunctions.AssignmentVal(population, popNum, infected,
-    infectedNum, vaccinated, vaccinatedRate)
+    infectedNum, vaccinated, vaccinatedRate, amountDead)
 
-#contagion.vaccine()
-# TODO: Update this to the vaccine functions
-contagion.popEffect()
+vaccine_runner = vaccine.VaccineInfo(popNum, vaccinatedNum, vaccinatedRate,
+    population)
+
+rate_manager = rate.Rates(population, popNum, infected,
+    infectedNum, vaccinated, vaccinatedNum, death_rate, vaccineEffectiveness,
+    infectionRate)
 
 data_manager = dataWrite.FileManager(vaccinatedNum, popNum, infectedNum)
 data_manager.createFile()
 
-# TODO: Add other class actions
+death_rate_return = rate_manager.deathRateGenerator()
+population = death_rate_return
+
+vax_return = vaccine_runner.vaccine()
+population = vax_return
+
+pop_return = contagion.initial_Infection()
+population = pop_return
 
 while True:
     day += 1
@@ -89,10 +101,32 @@ while True:
     data_manager.dailyUpdate(popNum, infectedNum, amountDead,
         newInfected, day)
 
+    for people in population:
+        people[1] -= 1
+
+    infect_assign = rate_manager.infectionRateWorker()
+    population = infect_assign
+
+    infection_return = contagion.infectionAssignment()
+    population = infection_return[0]
+    infected = infection_return[1]
+    infectedNum = infection_return[2]
+    popNum = infection_return[3]
+    amountDead = infection_return[4]
+
+    choice_return = rate_manager.deathChoice()
+    population = choice_return
+
+    newInfected = 0
+
     keepOn = input("Continue? (Y/n) ")
     keepOn = keepOn.title()
 
     if keepOn == "N":
         break
+
     elif keepOn == "Y":
         continue
+
+    else:
+        print("\n\t\tNot a valid option, continuing to the next day.")

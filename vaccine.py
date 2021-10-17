@@ -1,5 +1,7 @@
 #This file deals with all information dealing with the vaccine.
 
+import random
+
 class VaccineInfo:
     """Everything dealing with the vaccine"""
     def __init__(self, populationNumber, vaccinatedNum, vaccinatedRate,
@@ -15,8 +17,10 @@ class VaccineInfo:
         vaccinatedPercent = self.populationNumber * self.vaccinatedRate
         vaccinatedPercent = int(vaccinatedPercent)
         for people in self.population:
-            while people[0] < vaccinatedPercent + 1:
+            if people[0] < vaccinatedPercent + 1:
                 people[2] = "Vaccinated"
-        print(vaccinatedPercent)
+
+            else:
+                pass
         return self.population
         # NOTE: make sure to add something to return.
