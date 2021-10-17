@@ -26,7 +26,9 @@ infectedNum = int(infectedNum)
 infected = []
 #This is a list that contains infected people.
 
-death_rate = int(input("What is the death rate?\n\t"))
+dead_list = []
+
+death_rate = float(input("What is the death rate?\n\t"))
 # The death rate
 
 vaccinatedNum = 0
@@ -64,13 +66,12 @@ infectionRate = int(infectionRate)
 #########
 
 creator = populationfunctions.PopulationCreate(population, popNum, infected,
-    infectedNum, vaccinated, vaccinatedRate, amountDead)
+    infectedNum, vaccinated, vaccinatedRate, amountDead, dead_list)
 
 population = creator.populate()
-#print(f"Population: {population}")
 
 contagion = populationfunctions.AssignmentVal(population, popNum, infected,
-    infectedNum, vaccinated, vaccinatedRate, amountDead)
+    infectedNum, vaccinated, vaccinatedRate, amountDead, dead_list)
 
 vaccine_runner = vaccine.VaccineInfo(popNum, vaccinatedNum, vaccinatedRate,
     population)
@@ -108,9 +109,6 @@ while True:
     for people in population:
         people[1] -= 1
 
-    choice_return = rate_manager.deathChoice()
-    population = choice_return
-
     infect_assign = rate_manager.infectionRateWorker()
     population = infect_assign
 
@@ -121,8 +119,11 @@ while True:
     popNum = infection_return[3]
     amountDead = infection_return[4]
 
+    choice_return = rate_manager.deathChoice()
+    population = choice_return
+
     tomarrow_s_infected_num = infectedNum - old_infected_num
-    correct_daily_infected_num = int(tomarrow_s_infected_num)
+    correct_daily_infected_num = abs(int(tomarrow_s_infected_num))
 
     keepOn = input("Continue? (Y/n) ")
     keepOn = keepOn.title()
