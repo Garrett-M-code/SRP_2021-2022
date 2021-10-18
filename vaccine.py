@@ -22,6 +22,6 @@ class VaccineInfo:
 
             else:
                 pass
-            print(people)
+                
         return self.population
         # NOTE: make sure to add something to return.

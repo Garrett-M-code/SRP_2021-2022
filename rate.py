@@ -30,7 +30,6 @@ class Rates:
             elif people[2] == "Not vaccinated":
                 people[5] = self.death_rate
 
-            print(people)
 
         return self.population
 

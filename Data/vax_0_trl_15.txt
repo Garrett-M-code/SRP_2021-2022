@@ -1,0 +1,785 @@
+VIRUS SIMULATION DATA:
+Population: 244227
+Vaccinated: 0
+Infected: 37647
+
+Day: 1
+	Current population:
+		244227
+
+	Total Amount Dead:
+		0
+
+	Currently Infected:
+		37647
+
+	Today's Newly infected:
+		0
+Day: 2
+	Current population:
+		244227
+
+	Total Amount Dead:
+		0
+
+	Currently Infected:
+		37991
+
+	Today's Newly infected:
+		0
+Day: 3
+	Current population:
+		244203
+
+	Total Amount Dead:
+		24
+
+	Currently Infected:
+		38293
+
+	Today's Newly infected:
+		0
+Day: 4
+	Current population:
+		244176
+
+	Total Amount Dead:
+		51
+
+	Currently Infected:
+		38588
+
+	Today's Newly infected:
+		0
+Day: 5
+	Current population:
+		244147
+
+	Total Amount Dead:
+		80
+
+	Currently Infected:
+		38905
+
+	Today's Newly infected:
+		0
+Day: 6
+	Current population:
+		244127
+
+	Total Amount Dead:
+		100
+
+	Currently Infected:
+		39193
+
+	Today's Newly infected:
+		0
+Day: 7
+	Current population:
+		244091
+
+	Total Amount Dead:
+		136
+
+	Currently Infected:
+		39497
+
+	Today's Newly infected:
+		0
+Day: 8
+	Current population:
+		244053
+
+	Total Amount Dead:
+		174
+
+	Currently Infected:
+		39788
+
+	Today's Newly infected:
+		0
+Day: 9
+	Current population:
+		244017
+
+	Total Amount Dead:
+		210
+
+	Currently Infected:
+		40096
+
+	Today's Newly infected:
+		0
+Day: 10
+	Current population:
+		243983
+
+	Total Amount Dead:
+		244
+
+	Currently Infected:
+		40363
+
+	Today's Newly infected:
+		0
+Day: 11
+	Current population:
+		243959
+
+	Total Amount Dead:
+		268
+
+	Currently Infected:
+		40655
+
+	Today's Newly infected:
+		0
+Day: 12
+	Current population:
+		243935
+
+	Total Amount Dead:
+		292
+
+	Currently Infected:
+		40959
+
+	Today's Newly infected:
+		0
+Day: 13
+	Current population:
+		243917
+
+	Total Amount Dead:
+		310
+
+	Currently Infected:
+		41258
+
+	Today's Newly infected:
+		0
+Day: 14
+	Current population:
+		243889
+
+	Total Amount Dead:
+		338
+
+	Currently Infected:
+		41559
+
+	Today's Newly infected:
+		0
+Day: 15
+	Current population:
+		243860
+
+	Total Amount Dead:
+		367
+
+	Currently Infected:
+		4518
+
+	Today's Newly infected:
+		0
+Day: 16
+	Current population:
+		243859
+
+	Total Amount Dead:
+		368
+
+	Currently Infected:
+		4543
+
+	Today's Newly infected:
+		0
+Day: 17
+	Current population:
+		243857
+
+	Total Amount Dead:
+		370
+
+	Currently Infected:
+		4584
+
+	Today's Newly infected:
+		0
+Day: 18
+	Current population:
+		243854
+
+	Total Amount Dead:
+		373
+
+	Currently Infected:
+		4667
+
+	Today's Newly infected:
+		0
+Day: 19
+	Current population:
+		243847
+
+	Total Amount Dead:
+		380
+
+	Currently Infected:
+		4695
+
+	Today's Newly infected:
+		0
+Day: 20
+	Current population:
+		243842
+
+	Total Amount Dead:
+		385
+
+	Currently Infected:
+		4804
+
+	Today's Newly infected:
+		0
+Day: 21
+	Current population:
+		243836
+
+	Total Amount Dead:
+		391
+
+	Currently Infected:
+		4824
+
+	Today's Newly infected:
+		0
+Day: 22
+	Current population:
+		243833
+
+	Total Amount Dead:
+		394
+
+	Currently Infected:
+		4878
+
+	Today's Newly infected:
+		0
+Day: 23
+	Current population:
+		243831
+
+	Total Amount Dead:
+		396
+
+	Currently Infected:
+		4922
+
+	Today's Newly infected:
+		0
+Day: 24
+	Current population:
+		243828
+
+	Total Amount Dead:
+		399
+
+	Currently Infected:
+		4998
+
+	Today's Newly infected:
+		0
+Day: 25
+	Current population:
+		243825
+
+	Total Amount Dead:
+		402
+
+	Currently Infected:
+		5033
+
+	Today's Newly infected:
+		0
+Day: 26
+	Current population:
+		243823
+
+	Total Amount Dead:
+		404
+
+	Currently Infected:
+		5137
+
+	Today's Newly infected:
+		0
+Day: 27
+	Current population:
+		243820
+
+	Total Amount Dead:
+		407
+
+	Currently Infected:
+		5196
+
+	Today's Newly infected:
+		0
+Day: 28
+	Current population:
+		243818
+
+	Total Amount Dead:
+		409
+
+	Currently Infected:
+		5259
+
+	Today's Newly infected:
+		0
+Day: 29
+	Current population:
+		243816
+
+	Total Amount Dead:
+		411
+
+	Currently Infected:
+		5351
+
+	Today's Newly infected:
+		0
+Day: 30
+	Current population:
+		243815
+
+	Total Amount Dead:
+		412
+
+	Currently Infected:
+		5362
+
+	Today's Newly infected:
+		0
+Day: 31
+	Current population:
+		243813
+
+	Total Amount Dead:
+		414
+
+	Currently Infected:
+		5360
+
+	Today's Newly infected:
+		0
+Day: 32
+	Current population:
+		243810
+
+	Total Amount Dead:
+		417
+
+	Currently Infected:
+		5330
+
+	Today's Newly infected:
+		0
+Day: 33
+	Current population:
+		243803
+
+	Total Amount Dead:
+		424
+
+	Currently Infected:
+		5361
+
+	Today's Newly infected:
+		0
+Day: 34
+	Current population:
+		243802
+
+	Total Amount Dead:
+		425
+
+	Currently Infected:
+		5322
+
+	Today's Newly infected:
+		0
+Day: 35
+	Current population:
+		243798
+
+	Total Amount Dead:
+		429
+
+	Currently Infected:
+		5343
+
+	Today's Newly infected:
+		0
+Day: 36
+	Current population:
+		243797
+
+	Total Amount Dead:
+		430
+
+	Currently Infected:
+		5369
+
+	Today's Newly infected:
+		0
+Day: 37
+	Current population:
+		243796
+
+	Total Amount Dead:
+		431
+
+	Currently Infected:
+		5375
+
+	Today's Newly infected:
+		0
+Day: 38
+	Current population:
+		243794
+
+	Total Amount Dead:
+		433
+
+	Currently Infected:
+		5383
+
+	Today's Newly infected:
+		0
+Day: 39
+	Current population:
+		243792
+
+	Total Amount Dead:
+		435
+
+	Currently Infected:
+		5383
+
+	Today's Newly infected:
+		0
+Day: 40
+	Current population:
+		243787
+
+	Total Amount Dead:
+		440
+
+	Currently Infected:
+		5325
+
+	Today's Newly infected:
+		0
+Day: 41
+	Current population:
+		243784
+
+	Total Amount Dead:
+		443
+
+	Currently Infected:
+		5305
+
+	Today's Newly infected:
+		0
+Day: 42
+	Current population:
+		243780
+
+	Total Amount Dead:
+		447
+
+	Currently Infected:
+		5280
+
+	Today's Newly infected:
+		0
+Day: 43
+	Current population:
+		243778
+
+	Total Amount Dead:
+		449
+
+	Currently Infected:
+		5271
+
+	Today's Newly infected:
+		0
+Day: 44
+	Current population:
+		243777
+
+	Total Amount Dead:
+		450
+
+	Currently Infected:
+		5302
+
+	Today's Newly infected:
+		0
+Day: 45
+	Current population:
+		243775
+
+	Total Amount Dead:
+		452
+
+	Currently Infected:
+		5321
+
+	Today's Newly infected:
+		0
+Day: 46
+	Current population:
+		243773
+
+	Total Amount Dead:
+		454
+
+	Currently Infected:
+		5317
+
+	Today's Newly infected:
+		0
+Day: 47
+	Current population:
+		243767
+
+	Total Amount Dead:
+		460
+
+	Currently Infected:
+		5288
+
+	Today's Newly infected:
+		0
+Day: 48
+	Current population:
+		243761
+
+	Total Amount Dead:
+		466
+
+	Currently Infected:
+		5289
+
+	Today's Newly infected:
+		0
+Day: 49
+	Current population:
+		243759
+
+	Total Amount Dead:
+		468
+
+	Currently Infected:
+		5296
+
+	Today's Newly infected:
+		0
+Day: 50
+	Current population:
+		243757
+
+	Total Amount Dead:
+		470
+
+	Currently Infected:
+		5284
+
+	Today's Newly infected:
+		0
+Day: 51
+	Current population:
+		243749
+
+	Total Amount Dead:
+		478
+
+	Currently Infected:
+		5252
+
+	Today's Newly infected:
+		0
+Day: 52
+	Current population:
+		243749
+
+	Total Amount Dead:
+		478
+
+	Currently Infected:
+		5253
+
+	Today's Newly infected:
+		0
+Day: 53
+	Current population:
+		243746
+
+	Total Amount Dead:
+		481
+
+	Currently Infected:
+		5273
+
+	Today's Newly infected:
+		0
+Day: 54
+	Current population:
+		243740
+
+	Total Amount Dead:
+		487
+
+	Currently Infected:
+		5306
+
+	Today's Newly infected:
+		0
+Day: 55
+	Current population:
+		243737
+
+	Total Amount Dead:
+		490
+
+	Currently Infected:
+		5348
+
+	Today's Newly infected:
+		0
+Day: 56
+	Current population:
+		243734
+
+	Total Amount Dead:
+		493
+
+	Currently Infected:
+		5344
+
+	Today's Newly infected:
+		0
+Day: 57
+	Current population:
+		243731
+
+	Total Amount Dead:
+		496
+
+	Currently Infected:
+		5303
+
+	Today's Newly infected:
+		0
+Day: 58
+	Current population:
+		243727
+
+	Total Amount Dead:
+		500
+
+	Currently Infected:
+		5295
+
+	Today's Newly infected:
+		0
+Day: 59
+	Current population:
+		243722
+
+	Total Amount Dead:
+		505
+
+	Currently Infected:
+		5303
+
+	Today's Newly infected:
+		0
+Day: 60
+	Current population:
+		243722
+
+	Total Amount Dead:
+		505
+
+	Currently Infected:
+		5327
+
+	Today's Newly infected:
+		0
+Day: 61
+	Current population:
+		243721
+
+	Total Amount Dead:
+		506
+
+	Currently Infected:
+		5329
+
+	Today's Newly infected:
+		0
+Day: 62
+	Current population:
+		243716
+
+	Total Amount Dead:
+		511
+
+	Currently Infected:
+		5332
+
+	Today's Newly infected:
+		0
+Day: 63
+	Current population:
+		243713
+
+	Total Amount Dead:
+		514
+
+	Currently Infected:
+		5365
+
+	Today's Newly infected:
+		0
+Day: 64
+	Current population:
+		243709
+
+	Total Amount Dead:
+		518
+
+	Currently Infected:
+		5398
+
+	Today's Newly infected:
+		0
+Day: 65
+	Current population:
+		243705
+
+	Total Amount Dead:
+		522
+
+	Currently Infected:
+		5407
+
+	Today's Newly infected:
+		0
